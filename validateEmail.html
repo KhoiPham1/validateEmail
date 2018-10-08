@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function valiDateEmail(str) {
+        regexp = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)$/;
+        if (regexp.test(str)){
+            document.write("correct" + "</br>");
+        }else {
+            document.write("incorrect" + "</br>");
+        }
+    }
+    valiDateEmail('ab@gmail.com');
+    valiDateEmail('@gmail.com',);
+    valiDateEmail('ab@yahoo.com');
+    valiDateEmail('abc@hotmail.com');
+    valiDateEmail('ab@gmail.');
+    valiDateEmail('@#abc@gmail.com');
+
+</script>
+</body>
+</html>
